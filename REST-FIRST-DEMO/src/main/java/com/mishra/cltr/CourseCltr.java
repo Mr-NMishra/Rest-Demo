@@ -18,7 +18,9 @@ import com.mishra.service.CourseService;
 				 * every handler present inside this are Response body don't 
 				 * consider as view or else we can use @responsebody individually in 
 				 * every handler method*/
-//@Controller
+
+
+//@Controller  	//We remove as this is MVC controller
 						// here we are doing Class level mapping
 @RequestMapping("Course")
 public class CourseCltr {
