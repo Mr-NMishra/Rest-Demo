@@ -16,7 +16,8 @@ import com.mishra.service.CourseService;
 @RestController
 				/* this  @RestController is used to tell our front controller that
 				 * every handler present inside this are Response body don't 
-				 * consider as view*/
+				 * consider as view or else we can use @responsebody individually in 
+				 * every handler method*/
 //@Controller
 						// here we are doing Class level mapping
 @RequestMapping("Course")
@@ -37,10 +38,10 @@ public class CourseCltr {
 	//@ResponseBody
 	public void m1() {
 		Course course = new Course();
-		course.setCode("S103");
-		course.setTitle("Core");
-		course.setSubject("BackEnd-Programming");
-		course.setFees(6000);
+		course.setCode("S104");
+		course.setTitle("SQL");
+		course.setSubject("Query-Language");
+		course.setFees(1000);
 		courseService.createNewCourse(course);
 	}
 
